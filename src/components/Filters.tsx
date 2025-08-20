@@ -21,10 +21,6 @@ const originFilters = [
 
 const Filters: React.FC = () => {
   const router = useRouter();
-  const [origin, setOrigin] = useState();
-  const [year, setYear] = useState();
-
-  console.log(origin, year);
 
   return (
     <div className="filters container bg-dark text-white rounded -mt-5 mb-5">
@@ -39,7 +35,6 @@ const Filters: React.FC = () => {
                 value={router.query.origin}
                 id="origin"
                 onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-                  setOrigin(event.target.value);
                   router.push({
                     pathname: "/",
                     query: {
@@ -69,7 +64,6 @@ const Filters: React.FC = () => {
                 value={router.query.year}
                 id="year"
                 onChange={(event: React.ChangeEvent<HTMLSelectElement>) => {
-                  setYear(event.target.value);
                   router.push({
                     pathname: "/",
                     query: {
