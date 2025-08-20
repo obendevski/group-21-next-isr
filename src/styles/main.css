@@ -1,0 +1,32 @@
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+.footer {
+  top: 100vh;
+}
+
+.banner {
+  background: url("https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/hero-banner/2022/04_12/gate_models_og_01.jpg")
+    no-repeat center / cover fixed;
+}
+
+.small-banner {
+  height: 30vh;
+  object-fit: cover;
+}
+
+.py-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.-mt-5 {
+  margin-top: -3rem;
+}
+
+.h-150 {
+  height: 150px;
+}
